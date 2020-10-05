@@ -1,0 +1,21 @@
+#download DailyClimateData.txt and save
+#read DailyClimateData.txt in read_csv to dataFrame
+#define and plot functions
+
+        ReadData( fileName )
+        Check01_RemoveNoDataValues( DataDF, ReplacedValuesDF )
+        Check02_GrossErrors( DataDF, ReplacedValuesDF )
+        Check03_TmaxTminSwapped( DataDF, ReplacedValuesDF )
+        Check04_TmaxTminRange( DataDF, ReplacedValuesDF )
+        
+#build and format plots for each variable before and after data checks
+#import and save plot graphs to png files
+        savefig('Precipitation.png')       
+        savefig('Max Temp.png')
+        savefig('Min Temp.png')
+        savefig('windspeed.png')
+        
+                
+
+
+                
