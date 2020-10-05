@@ -72,7 +72,7 @@ def Check03_TmaxTminSwapped( DataDF, ReplacedValuesDF ):
     #swap values when not true
     
     for i in range (len(DataDF)):
-        if DataDF["Max Temp"][i] < DataDF["Min Temp"][i]: # Check if Min is larger than Max
+        if DataDF['Max Temp'][i] < DataDF['Min Temp'][i]: # Check if Min is larger than Max
             Tmax = DataDF['Min Temp'][i] #When condition is true assigns maxValue to Min temp 
             Tmin = DataDF['Max Temp'][i] #When ondition is true assigns minValue to Max temp             
             
