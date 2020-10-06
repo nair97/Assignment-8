@@ -25,8 +25,7 @@ def ReadData( fileName ):
     DataDF = pd.read_csv("DailyClimateData.txt",header=None, names=colNames,  
                          delimiter=r"\s+",parse_dates=[0])
     DataDF = DataDF.set_index('Date')
-    DataDF['Wind Speed'] = DataDF['Wind Speed'].str.replace("`"," ").astype(float)
-    
+
     # define and initialize the missing data dictionary
     ReplacedValuesDF = pd.DataFrame(0, index=["1. No Data"], columns=colNames[1:])
      
