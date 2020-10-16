@@ -140,6 +140,7 @@ if __name__ == '__main__':
     plt.legend()
     plt.xlabel('Date')
     plt.ylabel('Precipitation (mm)')
+    plt.tight_layout()
     plt.savefig('Precipitation.png')# save plot
     plt.show()#display plot
     plt.close()#display plot
@@ -151,6 +152,7 @@ if __name__ == '__main__':
     plt.legend()
     plt.xlabel('Date')
     plt.ylabel('Maximum Temperature')
+    plt.tight_layout()
     plt.savefig('Max Temp.png')# save plot
     plt.show() #display plot
     plt.close() #close plot
@@ -162,6 +164,7 @@ if __name__ == '__main__':
     plt.legend()
     plt.xlabel('Date')
     plt.ylabel('Minimum Temperature')
+    plt.tight_layout()
     plt.savefig('Min Temp.png')# save plot
     plt.show()#display plot
     plt.close() #close plot
@@ -173,6 +176,7 @@ if __name__ == '__main__':
     plt.legend()
     plt.xlabel('Date')
     plt.ylabel('Wind Speed')
+    plt.tight_layout()
     plt.savefig('windspeed.png')# save plot
     plt.show()#display plot
     plt.close() #close plot
